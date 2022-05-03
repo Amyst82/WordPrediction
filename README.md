@@ -29,7 +29,8 @@ NGramPrediction.InitFromText("Some long text or whatever...");
 Initialize class with a path to a file or with a text directly.
 
 ```
-string output = NGramPrediction.GetPredictedString(true, "Some text", 10); //getting max 10 predicted words (duplicates will be excluded on output) using CDF
+//getting max 10 predicted words (duplicates will be excluded on output) using CDF
+string output = NGramPrediction.GetPredictedString(true, "Some text", 10); 
 ```
 or get the list of predicted words (excluding duplicates)
 ```
