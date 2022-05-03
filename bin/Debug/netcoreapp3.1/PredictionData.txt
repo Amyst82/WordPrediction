@@ -1,0 +1,6 @@
+Note – for illustrating the example, I have assigned the variable corpus to some text. If you want to test data on real world text data, you can find the data here.
+
+Solution – We can approach this problem using the concepts of probability. Firstly we must calculate the frequency of all the words occurring just after the input in the text file(n-grams, here it is 1-gram, because we always find the next 1 word in the whole data file). Then using those frequencies, calculate the CDF of all these words and just choose a random word from it. To choose this random word, we take a random number and find the smallest CDF greater than or equal the random number. We do so because we want the most probable answer for each case. So that can be achieved by cdf as it gives the cumulative probability for each word in the list. 
+After finding the CDF, we can easily find the corresponding word and append that word to the output string. Now, if you wish, you can also append the word to the input string and send the whole string to repeat the process to find the next word, or you can just send the word that you found out using cdf. I have done that using the former approach. 
+
+Note – You will get a different output if you enter the same word multiple times. That depends on the size of your data file. Larger the file, more probability of a different output. 

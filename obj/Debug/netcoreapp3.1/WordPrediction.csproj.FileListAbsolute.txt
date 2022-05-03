@@ -1,0 +1,14 @@
+C:\Users\sergi\source\repos\WordPrediction\bin\Debug\netcoreapp3.1\WordPrediction.exe
+C:\Users\sergi\source\repos\WordPrediction\bin\Debug\netcoreapp3.1\WordPrediction.deps.json
+C:\Users\sergi\source\repos\WordPrediction\bin\Debug\netcoreapp3.1\WordPrediction.runtimeconfig.json
+C:\Users\sergi\source\repos\WordPrediction\bin\Debug\netcoreapp3.1\WordPrediction.runtimeconfig.dev.json
+C:\Users\sergi\source\repos\WordPrediction\bin\Debug\netcoreapp3.1\WordPrediction.dll
+C:\Users\sergi\source\repos\WordPrediction\bin\Debug\netcoreapp3.1\WordPrediction.pdb
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.csproj.AssemblyReference.cache
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.AssemblyInfoInputs.cache
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.AssemblyInfo.cs
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.csproj.CoreCompileInputs.cache
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.dll
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.pdb
+C:\Users\sergi\source\repos\WordPrediction\obj\Debug\netcoreapp3.1\WordPrediction.genruntimeconfig.cache
