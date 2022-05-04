@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UuKN3Q2uXBvAmZ5vNBTzYhOxSM7LKCXr09FjKrSDHwIPPoepnimwwqcQlxvY+j223dRX35v8WUo+yUNIEuMM0w==",
+  "dgSpecHash": "67YaTNC7UD4JxqnbR9teE8tUayQ/6WI5QpUhC6pppJcB/kkuCyOKgAUeqmxuLICRukvoguRFmn1Dyygb2/po5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sergi\\source\\repos\\WordPrediction\\WordPrediction.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/amyst82/Documents/GitHub/WordPrediction/WordPrediction.csproj",
+  "expectedPackageFiles": [
+    "/Users/amyst82/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/amyst82/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.24/microsoft.netcore.app.host.osx-x64.3.1.24.nupkg.sha512",
+    "/Users/amyst82/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -93,17 +93,21 @@ namespace WordPrediction
         public static List<string> GetPredictedWords(bool useCDF, string word, int len)
         {
             var result = getPredicts(useCDF, word, len); //Trying get list of predicted words by the whole sentence
-            if (result[0] == null) //In case if nothing found we search by the last word
+            if(result.Count > 0)
             {
-                var wordPattern = new Regex(@"\w+");
-                string word2 = wordPattern.Matches(word).Cast<Match>().Select(m => m.Value).LastOrDefault(); //getting last word of sentence
-                var tryByLastWord = getPredicts(useCDF, word2, len);
-                if (tryByLastWord[0] == null)
+                if (result[0] == null) //In case if nothing found we search by the last word
                 {
-                    return new List<string>() { "" }; //Searching by last words didn't help :(
+                    var wordPattern = new Regex(@"\w+");
+                    string word2 = wordPattern.Matches(word).Cast<Match>().Select(m => m.Value).LastOrDefault(); //getting last word of sentence
+                    var tryByLastWord = getPredicts(useCDF, word2, len);
+                    if (tryByLastWord[0] == null)
+                    {
+                        return new List<string>() { "" }; //Searching by last words didn't help :(
+                    }
                 }
+                return result;
             }
-            return result;
+            return new List<string>() { "" };
         }
         private static List<string> getPredicts(bool useCDF, string word, int len) //Len is count of words you want to get predicted (initial word is not counted)
         {

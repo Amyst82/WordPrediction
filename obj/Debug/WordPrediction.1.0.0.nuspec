@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WordPrediction</id>
+    <version>1.0.0</version>
+    <authors>WordPrediction</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/amyst82/Documents/GitHub/WordPrediction/bin/Debug/netcoreapp3.1/WordPrediction.runtimeconfig.json" target="lib/netcoreapp3.1/WordPrediction.runtimeconfig.json" />
+    <file src="/Users/amyst82/Documents/GitHub/WordPrediction/bin/Debug/netcoreapp3.1/WordPrediction.dll" target="lib/netcoreapp3.1/WordPrediction.dll" />
+  </files>
+</package>
