@@ -17,6 +17,10 @@ namespace WordPrediction
                 Console.WriteLine($"Using CDF: {output}");
                 string output2 = NGramPrediction.GetPredictedString(false, input, 10); //getting 10 most frequent predicted words (duplicates will be excluded on output)
                 Console.WriteLine($"Most frequent: {output2}");
+
+                string output3 = NGramPrediction.GetLastWord(input);
+                Console.WriteLine($"Next word: {output3}");
+
             }
 
         }

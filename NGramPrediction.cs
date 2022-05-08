@@ -9,7 +9,7 @@ namespace WordPrediction
 {
     public static class NGramPrediction
     {
-        private static string[] wordsInCorpus;
+        private static List<string> wordsInCorpus;
         public static void Init(string path) //load data from file
         {
             var content = File.ReadAllText(path);
@@ -18,7 +18,7 @@ namespace WordPrediction
         public static void InitFromText(string content) //load data from any provided text
         {
             var wordPattern = new Regex(@"\w+"); //word pattern (i guess)
-            wordsInCorpus = wordPattern.Matches(content).Cast<Match>().Select(m => m.Value).ToArray(); //using regex to get list of words
+            wordsInCorpus = wordPattern.Matches(content).Cast<Match>().Select(m => m.Value).ToList(); //using regex to get list of words
         }
         private static Dictionary<string, int> countWordsInList(List<string> listOfWords) //Count frequency of each word in a list
         {
@@ -41,16 +41,16 @@ namespace WordPrediction
                 List<string> listFreq = new List<string>();
                 int sen_len = sentence.Split(' ').Length;
                 List<string> word_list = new List<string>();
-                for (int i = 0; i < wordsInCorpus.Length - 1; i++)
+                for (int i = 0; i < wordsInCorpus.Count - 1; i++)
                 {
-                    if (i + sen_len >= wordsInCorpus.Length)
+                    if (i + sen_len >= wordsInCorpus.Count)
                     {
-                        sen_len = wordsInCorpus.Length - i;
+                        sen_len = wordsInCorpus.Count - i;
                     }
-                    string line = string.Join(" ", wordsInCorpus, i, sen_len).ToLower();
+                    string line = string.Join(" ", wordsInCorpus.ToArray(), i, sen_len).ToLower();
                     if (line == sentence.ToLower())
                     {
-                        if (i + sen_len < wordsInCorpus.Length - 1)
+                        if (i + sen_len < wordsInCorpus.Count - 1)
                         {
                             //word_list.Add(wordsInCorpus[i + sen_len]);
                             listFreq.Add(wordsInCorpus[i + sen_len]);
@@ -83,6 +83,28 @@ namespace WordPrediction
         private static double GetRandomNumber(double minimum = 0d, double maximum = 1d)
         {
             return random.NextDouble() * (maximum - minimum) + minimum;
+        }
+        public static string GetLastWord(string word)
+        {
+            string result = "";
+            var wordPattern = new Regex(@"\w+");
+            string word2 = wordPattern.Matches(word).Cast<Match>().Select(m => m.Value).LastOrDefault();
+            int indexOfNext = 0;
+            for(int i = 0; i < wordsInCorpus.Count; i++)
+            {
+                if(wordsInCorpus[i].ToLower() == word2.ToLower())
+                {
+                    if(i+1 < wordsInCorpus.Count)
+                        indexOfNext = i + 1;
+                }
+            }
+            string tmpResult = wordsInCorpus[indexOfNext];
+            if (!string.IsNullOrWhiteSpace(tmpResult))
+            {
+                result = tmpResult;
+                return result;
+            }
+            return result;
         }
         public static string GetPredictedString(bool useCDF, string word, int len)
         {

@@ -1,0 +1,15 @@
+/Users/amyst82/Documents/GitHub/WordPrediction/bin/Debug/net6.0/WordPrediction
+/Users/amyst82/Documents/GitHub/WordPrediction/bin/Debug/net6.0/WordPrediction.deps.json
+/Users/amyst82/Documents/GitHub/WordPrediction/bin/Debug/net6.0/WordPrediction.runtimeconfig.json
+/Users/amyst82/Documents/GitHub/WordPrediction/bin/Debug/net6.0/WordPrediction.dll
+/Users/amyst82/Documents/GitHub/WordPrediction/bin/Debug/net6.0/WordPrediction.pdb
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.csproj.AssemblyReference.cache
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.AssemblyInfoInputs.cache
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.AssemblyInfo.cs
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.csproj.CoreCompileInputs.cache
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.dll
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/refint/WordPrediction.dll
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.pdb
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/WordPrediction.genruntimeconfig.cache
+/Users/amyst82/Documents/GitHub/WordPrediction/obj/Debug/net6.0/ref/WordPrediction.dll
